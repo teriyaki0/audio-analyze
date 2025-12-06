@@ -16,9 +16,9 @@ export const AppProviders: React.FC<{ children?: React.ReactNode }> = ({
   return (
     <Suspense fallback={<div>Загрузка…</div>}>
       <QueryClientProvider client={queryClient}>
-        <BrowserRouter>
+        <BrowserRouter basename="/audio-analyze">
           {children}
-          <RoutesWrapper /> {/* useRoutes вызывается внутри BrowserRouter */}
+          <RoutesWrapper />
         </BrowserRouter>
       </QueryClientProvider>
     </Suspense>

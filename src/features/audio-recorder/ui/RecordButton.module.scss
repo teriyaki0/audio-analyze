@@ -21,7 +21,7 @@
   box-shadow: 0 8px 24px rgba(66, 105, 226, 0.25);
 
   &:hover {
-    background-color: darken($blue, 12%);
+    background-color: color.adjust($blue, $lightness: -12%);
     transform: translateY(-4px);
     box-shadow: 0 12px 32px rgba(66, 105, 226, 0.35);
   }
