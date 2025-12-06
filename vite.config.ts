@@ -31,6 +31,7 @@ export default defineConfig(({ mode }) => {
         },
       }),
     ],
+    base: "/audio-analyze/",
     server: {
       port: Number(env.VITE_HTTP_PORT),
     },
